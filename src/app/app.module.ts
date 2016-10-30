@@ -7,6 +7,13 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HomeScreenComponent } from './home-screen/home-screen.component';
 
+import { AuthModule } from './auth/auth.module';
+import { AuthGuard } from './auth/auth-guard';
+
+import { AngularFireModule } from 'angularfire2';
+
+import { FirebaseConfig, FirebaseAuthConfig } from './shared/firebase.config';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,8 +23,10 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    AuthModule,
+    AngularFireModule.initializeApp(FirebaseConfig, FirebaseAuthConfig),
     RouterModule.forRoot([
-      { path: '', component: HomeScreenComponent }
+      { path: '', component: HomeScreenComponent, canActivate: [AuthGuard] }
     ])
   ],
   providers: [],
