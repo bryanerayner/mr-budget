@@ -12,3 +12,10 @@ export const FirebaseAuthConfig = {
     provider: AuthProviders.Google,
     method: AuthMethods.Redirect
 };
+
+export const AuthConfigGoogle = FirebaseAuthConfig;
+
+export const AuthConfigFacebook = {
+    provider: AuthProviders.Facebook,
+    method: AuthMethods.Redirect
+};

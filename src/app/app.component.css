@@ -1,0 +1,56 @@
+.user-proxime {
+    height: 24px;
+    display: flex;
+    margin-left:auto;
+    align-content: center;
+}
+
+.user-proxime_img {
+    margin-left: auto;
+    display: block;
+    height: 100%;
+    max-height: 24px;
+    border-radius: 24px;
+}
+
+.user-proxime_img > img {
+    display:inline-block;
+    height:100%;
+    width:auto;
+}
+
+.user-proxime_name {
+    margin: auto 8px auto;
+    font-size: 12px;
+
+}
+
+.toolbar-title {
+    margin-right:auto;
+}
+
+.logout-button {
+    
+}
+
+.app-icon-button {
+        box-shadow: none;
+    user-select: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    filter: none;
+    font-weight: normal;
+    height: auto;
+    line-height: inherit;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+
+}
+
+.app-content {
+    margin: 16px;
+}

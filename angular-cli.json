@@ -15,10 +15,12 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "mr",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "../node_modules/normalize.css/normalize.css",
+        "styles.css",
+        "app-theme.scss"
       ],
       "scripts": [],
       "environments": {
