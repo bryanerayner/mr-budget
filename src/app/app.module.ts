@@ -16,7 +16,9 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouterModule
+    RouterModule.forRoot([
+      { path: '', component: HomeScreenComponent }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
