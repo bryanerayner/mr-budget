@@ -1,0 +1,8 @@
+<h2>Plans</h2>
+<p>To use Mr. Budget, you'll need to choose a plan.</p>
+<div class="plans-container">
+  <mr-plan-details *ngFor="let plan of plans | async"
+                   [plan]="plan"
+                   [usersPlans]="currentUserPlans | async"
+                   (signUpClicked)="signUserUp(plan)"></mr-plan-details>
+</div>
