@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { AuthModule } from '../auth/auth.module';
+import { ApiModule } from '../api/api.module';
 import { CommonModule } from '@angular/common';
 import { AccountComponent } from './account.component';
 import { AccountService } from './account.service';
@@ -19,7 +20,8 @@ export {
 @NgModule({
   imports: [
     CommonModule,
-    AuthModule
+    AuthModule,
+    ApiModule
   ],
   declarations: [ AccountComponent ],
   providers: [ AccountService, AccountFeaturesGuard ]

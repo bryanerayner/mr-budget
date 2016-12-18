@@ -6,12 +6,14 @@ import { PlansService } from './plans.service';
 import { PlansScreenComponent } from './plans-screen/plans-screen.component';
 import { PlanDetailsComponent } from './plan-details/plan-details.component';
 import { AccountModule } from '../account/account.module';
+import { ApiModule } from '../api/api.module';
 
 @NgModule({
   imports: [
     CommonModule,
     MaterialModule,
-    AccountModule
+    AccountModule,
+    ApiModule
   ],
   declarations: [PlansComponent, PlansScreenComponent, PlanDetailsComponent],
   providers: [ PlansService ]

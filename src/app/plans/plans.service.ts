@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Http, Response } from '@angular/http';
-import { ApiConfig } from '../shared/api.config';
+import { ApiConfigService } from '../api/api-config.service';
 import { Plan } from '../shared/mr-budget.types';
 import { Observable } from 'rxjs';
 
